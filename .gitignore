@@ -1,0 +1,21 @@
+# Obsidian vault ignores
+.obsidian/
+.obsidian/workspace
+.trash/
+*.md.bak
+*.bak
+.DS_Store
+Thumbs.db
+.vscode/
+node_modules/
+
+# Sync / temp
+.sync
+*.log
+
+# Attachments or large binary exports (adjust as needed)
+attachments/
+export/
+
+# Env
+.env
