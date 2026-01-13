@@ -12,3 +12,8 @@ git config --global http.proxy http://127.0.0.1:7897; git config --global https.
 git remote set-url origin <new-repo-url>
 git remote -v
 git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+
+
+git add .
+git commit -m "你的修改说明"
+git push -f origin <分支名>
