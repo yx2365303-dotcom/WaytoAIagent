@@ -7,3 +7,8 @@ git add -A; git commit -m "同步本地修改 $(Get-Date -Format 'yyyy-MM-dd HH:
  # 全局代理说明：当前保留配置为 127.0.0.1:7897（保留为长期可用配置）
  # 临时取消全局代理：git config --global --unset http.proxy; git config --global --unset https.proxy
 git config --global http.proxy http://127.0.0.1:7897; git config --global https.proxy http://127.0.0.1:7897; git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+
+
+git remote set-url origin <new-repo-url>
+git remote -v
+git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
